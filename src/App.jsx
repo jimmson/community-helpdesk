@@ -7,7 +7,7 @@ import Router from "./Router";
 import { isLoggedIn, LoggedInContext } from "./utils/auth";
 
 // Styles
-import { lightTheme, variables } from "./styles/theme";
+import { saTheme, variables } from "./styles/theme";
 import { GlobalStyles } from "./styles/global";
 import "./main.scss";
 
@@ -30,12 +30,12 @@ export default () => {
   return (
     <>
       {loading ? (
-        <ThemeProvider theme={{ ...lightTheme, ...variables }}>
+        <ThemeProvider theme={{ ...saTheme, ...variables }}>
           <LoadingSpinner />
         </ThemeProvider>
       ) : (
         <IntlProvider locale={locale} messages={messages[locale]}>
-          <ThemeProvider theme={{ ...lightTheme, ...variables }}>
+          <ThemeProvider theme={{ ...saTheme, ...variables }}>
             <LoggedInContext.Provider
               value={{ data: isLogged, set: setLogged }}
             >

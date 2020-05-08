@@ -85,4 +85,47 @@ export default {
       },
     },
   },
+  saTheme: {
+    input: {
+      label: {
+        color: {
+          main: "#B0BEC5",
+        },
+      },
+      primary: {
+        background: {
+          main: "#ECEFF1",
+          hover: "transparent",
+          active: "transparent",
+          focus: "#FFFFFF",
+        },
+        borderColor: {
+          main: "#ECEFF1",
+          hover: "#37474F",
+          active: "#37474F",
+          focus: "#37474F",
+        },
+        color: {
+          main: "#37474F",
+        },
+      },
+      secondary: {
+        background: {
+          main: "transparent",
+          hover: "transparent",
+          active: "transparent",
+          focus: "transparent",
+        },
+        borderColor: {
+          main: "#ECEFF1",
+          hover: "#37474F",
+          active: "#37474F",
+          focus: "#37474F",
+        },
+        color: {
+          main: "#37474F",
+        },
+      },
+    },
+  },
 };

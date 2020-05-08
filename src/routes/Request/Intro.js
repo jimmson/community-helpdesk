@@ -23,7 +23,7 @@ const Intro = () => {
   const [{ locale, locales, loading }] = useLocale();
 
   return (
-    <Grid container spacing={0}>
+    <Grid container spacing={0} direction="row-reverse">
       <Grid item md={5} xs={12}>
         <div className="illustration" />
       </Grid>

@@ -19,6 +19,15 @@ export const darkTheme = {
   ...customInputThemes.darkTheme,
 };
 
+export const saTheme = {
+  body: "#FFFFFF",
+  primary: "#37474F",
+  text: "#37474F",
+  secondary: "#B0BEC5",
+  ...customButtonThemes.saTheme,
+  ...customInputThemes.saTheme,
+};
+
 export const variables = {
   text_m: "14pt",
   weight_m: "400",

@@ -75,4 +75,42 @@ export default {
       },
     },
   },
+  saTheme: {
+    button: {
+      primary: {
+        background: {
+          main: "#37474F",
+          hover: "#ECEFF1",
+          active: "#37474F",
+        },
+        borderColor: {
+          main: "#37474F",
+          hover: "#ECEFF1",
+          active: "#37474F",
+        },
+        color: {
+          main: "#FFFFFF",
+          hover: "#37474F",
+          active: "#FFFFFF",
+        },
+      },
+      secondary: {
+        background: {
+          main: "transparent",
+          hover: "#ECEFF1",
+          active: "#37474F",
+        },
+        borderColor: {
+          main: "#37474F",
+          hover: "#ECEFF1",
+          active: "#37474F",
+        },
+        color: {
+          main: "#37474F",
+          hover: "#37474F",
+          active: "#FFFFFF",
+        },
+      },
+    },
+  },
 };
