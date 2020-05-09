@@ -3,6 +3,7 @@ import { Route, Switch, Redirect } from "react-router-dom";
 
 // Routes
 import Intro from "./routes/Request/Intro";
+import About from "./routes/Request/About";
 
 import Launch from "./routes/Request/Launch";
 import MoreInfo from "./routes/Request/MoreInfo";
@@ -40,6 +41,7 @@ export default () => {
   return (
     <Switch>
       <Route exact path="/" component={Intro} />
+      <Route exact path="/about" component={About} />
       <Route
         path="/auth"
         render={({ match: { path } }) => (

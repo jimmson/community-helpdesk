@@ -8,10 +8,18 @@ import Button from "@material-ui/core/Button";
 import { lightBlue, lightGreen } from "@material-ui/core/colors";
 import { FormattedMessage } from "react-intl";
 
+// const theme = createMuiTheme({
+//   palette: {
+//     primary: lightGreen,
+//     secondary: lightBlue,
+//   },
+// });
+
 const theme = createMuiTheme({
   palette: {
-    primary: lightGreen,
-    secondary: lightBlue,
+    primary: {
+      main: "#ffffff",
+    },
   },
 });
 
