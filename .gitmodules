@@ -1,0 +1,4 @@
+[submodule "community-helpdesk-api"]
+	path = community-helpdesk-api
+	url = https://github.com/jimmson/community-helpdesk-api.git
+	branch = master
