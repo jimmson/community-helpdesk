@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useFormikContext } from "formik";
-import { Grid, Button } from "@material-ui/core";
+import { Grid, Button, Box } from "@material-ui/core";
 import { FormattedMessage } from "react-intl";
 import history from "../../utils/history";
 
@@ -16,36 +16,39 @@ function Confirmed() {
 
   return (
     <Grid container spacing={0}>
-      <Grid item xs={5}>
+      <Grid item md={5} xs={12}>
         <div className="illustration" />
       </Grid>
-      <Grid item xs={7}>
+
+      <Grid item md={7} xs={12}>
         <Grid
           container
           spacing={0}
           direction="column"
           alignItems="center"
           justify="center"
-          style={{ minHeight: "100vh" }}
+          style={{ minHeight: "100%" }}
         >
-          <div className="request-children-wrapper">
-            <div className="text-wrapper">
-              <h1 className="text-alpha">
-                <FormattedMessage id="confirmation.content.header" />
-              </h1>
-              <h3 className="text-alpha">
-                <FormattedMessage id="confirmation.content.body" />
-              </h3>
+          <Box m={2}>
+            <div className="request-children-wrapper">
+              <div className="text-wrapper">
+                <h1 className="text-alpha">
+                  <FormattedMessage id="confirmation.content.header" />
+                </h1>
+                <h3 className="text-alpha">
+                  <FormattedMessage id="confirmation.content.body" />
+                </h3>
 
-              <div className="action-wrapper">
-                <Link to="/">
-                  <Button color="primary" variant="contained">
-                    <FormattedMessage id="confirmation.buttons.home" />
-                  </Button>
-                </Link>
+                <div className="action-wrapper">
+                  <Link to="/">
+                    <Button color="primary" variant="contained">
+                      <FormattedMessage id="confirmation.buttons.home" />
+                    </Button>
+                  </Link>
+                </div>
               </div>
             </div>
-          </div>
+          </Box>
         </Grid>
       </Grid>
     </Grid>
