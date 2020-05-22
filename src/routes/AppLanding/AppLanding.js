@@ -32,6 +32,29 @@ function AppLanding() {
               <h3 className="text-alpha" style={{ whiteSpace: "pre-line" }}>
                 <FormattedMessage id="appLanding.content.body" />
               </h3>
+
+              <ul>
+                <li>
+                  <h3 style={{ whiteSpace: "pre-line" }}>
+                    <FormattedMessage id="appLanding.content.step1" />
+                  </h3>
+                </li>
+                <li>
+                  <h3 style={{ whiteSpace: "pre-line" }}>
+                    <FormattedMessage id="appLanding.content.step2" />
+                  </h3>
+                </li>
+                <li>
+                  <h3 style={{ whiteSpace: "pre-line" }}>
+                    <FormattedMessage id="appLanding.content.step3" />
+                  </h3>
+                </li>
+                <li>
+                  <h3 style={{ whiteSpace: "pre-line" }}>
+                    <FormattedMessage id="appLanding.content.step4" />
+                  </h3>
+                </li>
+              </ul>
             </Box>
 
             <div className="app-landing__links">
