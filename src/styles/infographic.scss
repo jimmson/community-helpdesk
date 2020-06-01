@@ -1,0 +1,14 @@
+.infographic {
+  height: 100vh;
+  @media only screen and (max-width: 500px) {
+    height: unset;
+    width: 100%;
+  }
+}
+
+.about {
+  @media only screen and (max-width: 795px) {
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+  }
+}

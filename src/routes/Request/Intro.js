@@ -9,6 +9,7 @@ import useLocale, { setLocale } from "../../hooks/useLocale";
 import { makeStyles } from "@material-ui/core/styles";
 import Box from "@material-ui/core/Box";
 import { ReactComponent as Seperator } from "../../assets/seperator.svg";
+import Mailchimp from "react-mailchimp-form";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -129,6 +130,7 @@ const Intro = () => {
                     type="image"
                     src="https://covidsa.help/payPal.svg"
                     border="0"
+                    width="42px"
                     name="submit"
                     title="PayPal - The safer, easier way to pay online!"
                     alt="Donate with PayPal button"
@@ -143,6 +145,20 @@ const Intro = () => {
                 </form>
                 <Seperator />
                 <BitcoinButton address="3BaiawemyKCNW1ND5BD3YH48kQrArW81Sy" />
+              </Box>
+              <Box className={classes.root} width={1}>
+                <Mailchimp
+                  action="https://help.us18.list-manage.com/subscribe/post?u=e6fa6b6cef7c89db1571d99f8&amp;id=a1c0049aae"
+                  fields={[
+                    {
+                      name: "EMAIL",
+                      placeholder: "Email",
+                      type: "email",
+                      required: true,
+                    },
+                  ]}
+                  className="mc_embed_signup"
+                />
               </Box>
             </Grid>
           </Grid>

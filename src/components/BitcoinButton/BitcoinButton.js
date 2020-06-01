@@ -27,6 +27,9 @@ const useStyles = makeStyles((theme) =>
     qr: {
       margin: theme.spacing(2),
     },
+    icon: {
+      width: "42px",
+    },
   })
 );
 
@@ -62,7 +65,7 @@ export default (props) => {
 
   return (
     <div>
-      <Bitcoin onClick={handleOpen}></Bitcoin>
+      <Bitcoin className={classes.icon} onClick={handleOpen}></Bitcoin>
       <Modal
         open={open}
         onClose={handleClose}
